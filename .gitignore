@@ -1,0 +1,10 @@
+*.o
+config.h
+configure
+config.log
+config.h.in
+config.status
+autom4te.cache/
+*~
+Makefile
+ctags
