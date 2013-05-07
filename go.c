@@ -506,16 +506,16 @@ static void makeTag (tokenInfo *const token, const goKind kind)
 
 	makeTagEntry (&e);
 
-	if (scope && Option.include.qualifiedTags)
-	{
-		vString *qualifiedName = vStringNew ();
-		vStringCopy (qualifiedName, scope);
-		vStringCatS (qualifiedName, ".");
-		vStringCat (qualifiedName, token->string);
-		e.name = vStringValue (qualifiedName);
-		makeTagEntry (&e);
-		vStringDelete (qualifiedName);
-	}
+	/* if (scope && Option.include.qualifiedTags) */
+	/* { */
+	/* 	vString *qualifiedName = vStringNew (); */
+	/* 	vStringCopy (qualifiedName, scope); */
+	/* 	vStringCatS (qualifiedName, "."); */
+	/* 	vStringCat (qualifiedName, token->string); */
+	/* 	e.name = vStringValue (qualifiedName); */
+	/* 	makeTagEntry (&e); */
+	/* 	vStringDelete (qualifiedName); */
+	/* } */
 }
 
 static void parsePackage (tokenInfo *const token)
